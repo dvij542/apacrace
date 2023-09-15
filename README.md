@@ -15,7 +15,8 @@ The tracks along with the racing lines used for the experiments are as follows :
 1. ETHZ
 
 | ![Track](https://github.com/dvij542/apacrace/assets/43860166/7031dbe5-4ebb-481e-af0a-91de0672177a) |
-| Track |
+|:--:| 
+| *Track* |
 
 Rendered racelines at :-
 
