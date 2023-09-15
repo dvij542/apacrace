@@ -39,11 +39,13 @@ Rendered racelines at :-
 ### Results on ETHZ track with constant friction decline 
 
 This is to simulate wear and tear of the tires. We reduce the friction coefficients $D_f$ and $D_r$ according to the following plot :-
+
 | ![max_friction_forces](https://github.com/dvij542/apacrace/assets/43860166/683361dd-918f-4b4e-aeda-0cfd74263175) |
 |:--:| 
 | time vs $D_f/D_r$ variation |
 
 The resultant trajectory, speed and $\mu$ (used to render raceline reference speeds) plots for different algorithms are as follows :-
+
 | Method | Trajectory | Speeds | $\mu$ used for raceline |
 |:--:|:--:|:--:|:--:|
 | Without any adaptation | ![track_run1](https://github.com/dvij542/apacrace/assets/43860166/5926a316-9ec5-442e-9343-a19ef6719039) | ![speeds(5)](https://github.com/dvij542/apacrace/assets/43860166/6d3857e5-4e89-403a-9d3f-65d4a88f72b9) | Same as beginning ($\mu=1.0$) |
@@ -55,11 +57,13 @@ The resultant trajectory, speed and $\mu$ (used to render raceline reference spe
 ### Results on ETHZMobil track with constant friction decline 
 
 We reduce the friction coefficients $D_f$ and $D_r$ according to the following plot :-
+
 | ![max_friction_forces](https://github.com/dvij542/apacrace/assets/43860166/75e8377f-8fad-4d5f-8bd2-a65e51c1ed86) |
 |:--:| 
 | time vs $D_f/D_r$ variation |
 
 The resultant trajectory, speed and $\mu$ (used to render raceline reference speeds) plots for different algorithms are as follows :-
+
 | Method | Trajectory | Speeds | $\mu$ used for raceline |
 |:--:|:--:|:--:|:--:|
 | Without any adaptation | ![track_run1](https://github.com/dvij542/apacrace/assets/43860166/5926a316-9ec5-442e-9343-a19ef6719039) | ![speeds(5)](https://github.com/dvij542/apacrace/assets/43860166/6d3857e5-4e89-403a-9d3f-65d4a88f72b9) | Same as beginning ($\mu=1.0$) |
