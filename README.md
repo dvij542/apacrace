@@ -36,7 +36,7 @@ Rendered racelines at :-
 
 Rendered racelines at :-
 
-| ![mu=0.6](https://github.com/dvij542/apacrace/assets/43860166/ac77b1b8-6347-4b07-8a5e-b6c97105591a) | ![mu=0.7](https://github.com/dvij542/apacrace/assets/43860166/9cccc787-a517-4095-a7b1-79ab5ed4df14) | ![mu=0.8](https://github.com/dvij542/apacrace/assets/43860166/f0cdaf09-fcec-49ac-ad80-d56a84e246bb) | ![mu=0.9](https://github.com/dvij542/apacrace/assets/43860166/4d547a5a-5efe-49af-8212-e2778d1b792f) | ![mu=1.0](https://github.com/dvij542/apacrace/assets/43860166/977537e3-072b-4ac7-bf0a-8d53345a5f8f) |
+| ![mu=0.6](https://github.com/dvij542/apacrace/assets/43860166/ac77b1b8-6347-4b07-8a5e-b6c97105591a | width=100) | ![mu=0.7](https://github.com/dvij542/apacrace/assets/43860166/9cccc787-a517-4095-a7b1-79ab5ed4df14) | ![mu=0.8](https://github.com/dvij542/apacrace/assets/43860166/f0cdaf09-fcec-49ac-ad80-d56a84e246bb) | ![mu=0.9](https://github.com/dvij542/apacrace/assets/43860166/4d547a5a-5efe-49af-8212-e2778d1b792f) | ![mu=1.0](https://github.com/dvij542/apacrace/assets/43860166/977537e3-072b-4ac7-bf0a-8d53345a5f8f) |
 |:--:|:--:|:--:|:--:|:--:| 
 | $$\mu=0.6$$ | $$\mu=0.7$$ | $$\mu=0.8$$ | $$\mu=0.9$$ | $$\mu=1.0$$ | 
 
