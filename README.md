@@ -23,11 +23,8 @@ Rendered racelines at :-
 | mu=0.6 | ![mu=0.6](https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686) |
 |:--:|:--:| 
 | mu=0.6 | ![mu=0.7](https://github.com/dvij542/apacrace/assets/43860166/eaf8f0d5-c88a-47eb-93a7-22592b26b452) |
-|:--:|:--:|
 | mu=0.6 | ![mu=0.8](https://github.com/dvij542/apacrace/assets/43860166/cbb1d89f-941d-48ef-9f60-d9a2e2d82c00) |
-|:--:|:--:|
 | mu=0.6 | ![mu=0.9](https://github.com/dvij542/apacrace/assets/43860166/6c9e0cd9-d8fc-45b4-b014-37b9e3d4baec) |
-|:--:|:--:|
 | mu=0.6 | ![mu=1.0](https://github.com/dvij542/apacrace/assets/43860166/38291ddb-2e58-413d-ae41-9ca07071b430) |
 
 2. ETHZMobil
