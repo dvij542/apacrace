@@ -1,10 +1,10 @@
 # Adaptive Planning and Control with Time-Varying Tire Models for Autonomous Racing Using Extreme Learning Machine
 
 ## Table of contents
--[Hardware specifications](#hardware-specifications)
--[Numerical simulation experiments](#Numerical-simulation-experiments)
--[Carla simulation experiment](#carla-simulation-experiment)
--[RC Car experiments](#RC-Car-experiments)
+- [Hardware specifications](#hardware-specifications)
+- [Numerical simulation experiments](#Numerical-simulation-experiments)
+- [Carla simulation experiment](#carla-simulation-experiment)
+- [RC Car experiments](#RC-Car-experiments)
 
 ## Hardware specifications
 
