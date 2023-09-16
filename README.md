@@ -40,6 +40,20 @@ Rendered racelines at :-
 |:--:|:--:|:--:|:--:|:--:| 
 | $$\mu=0.6$$ | $$\mu=0.7$$ | $$\mu=0.8$$ | $$\mu=0.9$$ | $$\mu=1.0$$ | 
 
+### Offline validation
+
+To demonstrate that our proposed ELM model can really learn from dynamics data and to get an idea of how much data is required to train a reasonable model, we perform this offline validation where we collect training data by running single lap on a ETHZMobil Track with pure pursuit for steering and PID for longitudinal control :-
+
+![track_training](https://github.com/dvij542/apacrace/assets/43860166/612f61d8-b880-492f-9ad6-6503b11f7b97)
+
+We use this data to train ELM models offline and also train GP models as proposed in [BayesRace](https://arxiv.org/pdf/2005.04755.pdf) work for comparison. Then, we make a run with NMPC using actual model parameters to run 1 lap on ETHZ track and use the trained models to predict difference in $vx$, $vy$ and $\omega$ between the actual values and the e-kinematic model. Here are the plots for $vx$, $vy$ and $\omega$ predictions for both ours and BayesRace against GT values.
+
+| ![y_comps_vx](https://github.com/dvij542/apacrace/assets/43860166/c6e343e5-91da-4649-8d43-1d77e779fdf7) | ![y_comps_vy](https://github.com/dvij542/apacrace/assets/43860166/750d3c26-e358-4469-9b17-cb4acd7408a6) | ![y_comps_omega](https://github.com/dvij542/apacrace/assets/43860166/393c9166-c27f-48f1-ae4f-9581afcf2e07) |
+|:--:|:--:|:--:| 
+| vx | vy | $\omega$ |  
+
+As can be seen the predictions from both GP (from BayesRace) and our proposed ELM model are nearly close to the GT with training data used from only 1 lap of training data with limiting speeds (Note that the predictions are not very close if the training data is collected at low speeds with little lateral slips). This suggests that our proposed ELM is indeed as good as (if not worse) using GP for predicting difference between actual and e-kinematic model of the vehicle. But the obvious advantage of using our ELM is that it's can be trained in an adaptive manner and with very less computation time allowing it to update online while GP's training time is huge and it scales with more training data. One way to get rid of increaing computation on data size is to use only last few samples for training but it needs to be trained each time for each cycle due to which it contributes larger computation time for each cycle. Also, ELM has significantly less non-linearity which allows us to use it in building a real-time NMPC controller with only around 0.05 $\pm$ 0.02 s computation time while GP takes about 0.3s $\pm$ 0.05s practically on our machine when used online (and even offline it takes 0.25s on avg as also reported by BayesRace) with IPOPT optimization. Also, with estimated tire curve from ELM, we can even estimate the tire friction coefficient by taking the max value of the prediction while for GP we need to use an estimator separately.
+
 ### Results on ETHZ track with constant friction decline 
 
 This is to simulate wear and tear of the tires. We reduce the friction coefficients $$D_f$$ and $$D_r$$ according to the following plot :-
@@ -58,6 +72,9 @@ The resultant trajectory, speed and $$\mu$$ (used to render raceline reference s
 | With GP for model difference | ![track_run1(3)](https://github.com/dvij542/apacrace/assets/43860166/bb7206f9-cc1a-4cc8-8c01-199340e177b9) | ![speeds(1)](https://github.com/dvij542/apacrace/assets/43860166/3c84b375-fd17-4539-899e-b9a398fdb461) | Same as GT |
 | Oracle | ![track_run1(4)](https://github.com/dvij542/apacrace/assets/43860166/b05c9edc-7c32-4138-a641-c614d925a079) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/3550dfa0-ec21-4dc6-bb68-7ad560b71019) | Same as GT |
 
+Here is the video comparison with 3 runs (without adaptation, with only model adaptation, with model + reference speed adaptation) in parallel :-
+
+
 ### Results on ETHZMobil track with constant friction decline 
 
 We reduce the friction coefficients $$D_f$$ and $$D_r$$ according to the following plot :-
@@ -74,3 +91,66 @@ The resultant trajectory, speed and $$\mu$$ (used to render raceline reference s
 | With only model adaptation | ![traj_withconstmobil](https://github.com/dvij542/apacrace/assets/43860166/129abd2d-b720-4691-b03f-13203913490b) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/f92ae393-c9bf-4038-ae92-6d16fe24b5ba) | Same as beginning ($$\mu=1.0$$) |
 | With model + reference speed adaptations (ours) | ![traj_withmobil](https://github.com/dvij542/apacrace/assets/43860166/7c90a09a-9473-4efd-8e7a-965f11fea833) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/d8d6f7dd-2d25-4be1-bd98-dc0891a9a053) |  ![mus](https://github.com/dvij542/apacrace/assets/43860166/8e076481-5d96-4942-bccb-633591ab1367) |
 | Oracle | ![traj_oraclemobil](https://github.com/dvij542/apacrace/assets/43860166/3384369e-55d1-4e38-a0ff-c824b5036675) |  ![speeds_oracle](https://github.com/dvij542/apacrace/assets/43860166/97e7b0a6-6fa8-49cb-aa04-c88b1bae241a) | Same as GT |
+
+### Results on ETHZ track with sudden friction decline
+
+Next, to test how our method would perform if there is a suddent drop in maximum friction parameter which can be caused for example by sudden rain/change in weather condition etc., we suddenly drop the friction coefficient by about 30\% at a given time according to the given plot :-
+
+| ![max_friction_forces](https://github.com/dvij542/apacrace/assets/43860166/508a9e8a-40d2-469d-8a42-8357bd334613) |
+|:--:|
+| time vs $$D_f/D_r$$ variation |
+
+| Method | Trajectory | Speeds | $$\mu$$ used for raceline |
+|:--:|:--:|:--:|:--:|
+| Without any adaptation | ![track_run1(1)](https://github.com/dvij542/apacrace/assets/43860166/79053d1c-2b6d-4e32-96fb-ae9d5abd9b77) | ![speeds(1)](https://github.com/dvij542/apacrace/assets/43860166/f892b908-8348-4831-b715-2bcc8c4cee96) | Same as beginning ($$\mu=1.0$$) |
+| With model + reference speed adaptations (ours) | ![track_run1](https://github.com/dvij542/apacrace/assets/43860166/d78894c3-ef25-4b88-a73f-f2c191b10739) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/3d7ad598-8ebf-4e2b-83c2-8a7108ed081a) |  ![mus](https://github.com/dvij542/apacrace/assets/43860166/8e076481-5d96-4942-bccb-633591ab1367) |
+
+## Carla simulation experiment 
+
+To demonstrate our algorithm working on a high fidelity simulator in realtime with full sized car, we deploy it on Carla simulator. Deploying on a simulator gives us additional confidence in terms of the performance guarantee in presence of sensor and model noise. We use the following trackmap (Town07) :- 
+
+| ![image](https://github.com/dvij542/apacrace/assets/43860166/acdf0340-1181-4662-a515-9cb49befdd74) |
+|:--:|
+| Town07 map |
+
+We use Audi TT car in Carla as follows
+
+| ![carla_car](https://github.com/dvij542/apacrace/assets/43860166/bddfa68c-d7cd-48be-b9c2-258c3d2d3429) |
+|:--:|
+| Car used for simulation |
+
+We start with the default model parameters as defined in Carla and reduce the tire_friction parameter (which is the coefficient of friction of the tire) of the vehicle linearly as described below :-
+
+### Offline validation
+
+For offline validation, we check the lateral and longitudinal forces from the trained model on one lap of data and compare them to the lateral and longitudinal force values obtained from the simulator. As shown in Fig. \ref{fig:offline_val_carla}, although these values are noisy, our trained model archives high fitting accuracy. This is to ensure that the fitted tire curves from offline collected data just from the trajectory data actually confirms with the actual force recorded by carla simulator (available from privileged forces on tyres from carla). We also present the difference in vx, vy and $\omega$ wrt the e-kinematic model.
+
+| ![slips_forces](https://github.com/dvij542/apacrace/assets/43860166/6abab9f5-fe29-4e3b-8534-9995ea6b3e6c) |  
+|:--:| 
+| slip vs force (Predicted (line) vs recorded (scatter)) |  
+
+### Online run with constant friction decay
+
+For the online run, we set $\alpha=0.002, \gamma=0.9, \mu_{start} = 1.0, K_{batch} = 2000, t_{th}=44s, n_h=40, N=50, Q=\begin{bmatrix} 0.1 & 0 \\ 0 & 0.1 \end{bmatrix}, R = \begin{bmatrix} 0.005 & 0 \\ 0 & 1 \end{bmatrix}$. The run plots for without adaptation are as follows :-
+
+| Trajectory | ![traj_without](https://github.com/dvij542/apacrace/assets/43860166/2e1116aa-8516-44d2-98ad-efd72629f48b) |
+|:--:|:--:| 
+| Speeds | ![speeds_carla_without](https://github.com/dvij542/apacrace/assets/43860166/22a26ea6-1f2e-49d5-ab02-973c24ab8948) |
+| $\mu$ taken to get raceline | Same as at the beginning ($\mu=1$) |
+
+As can be seen from the speed plot, the car crashes at about 120s. The plots for with adaptation are as follows :-
+
+| Trajectory |![traj_with](https://github.com/dvij542/apacrace/assets/43860166/46e18952-baaf-404e-a99d-900f919c1076) |
+|:--:|:--:| 
+| Speeds | ![speeds_carla_with](https://github.com/dvij542/apacrace/assets/43860166/6f74fc65-ea96-4ed3-ad96-95c7e399381d) |
+| $\mu$ taken to get raceline | ![mus_carla](https://github.com/dvij542/apacrace/assets/43860166/b573bed2-c370-41ab-8ccf-edcc8cd49c13) |
+
+The trajectory plots may not be visible clearly due to large track size. The video of the runs help to observe the results more clearly :-
+
+
+## RC Car
+
+
+
+
+
