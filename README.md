@@ -1,6 +1,7 @@
 # Adaptive Planning and Control with Time-Varying Tire Models for Autonomous Racing Using Extreme Learning Machine
 
 ## Table of contents
+- [Overview](#overview)
 - [Hardware specifications](#hardware-specifications)
 - [High Quality submission video](#hardware-specifications) 
 - [Numerical simulation experiments](#Numerical-simulation-experiments)
@@ -19,6 +20,10 @@
   - [Experiment Setup](#Experiment-Setup)
   - [Results on Oval track](#Results-on-Oval-track)
   - [Results on Diamond track](#Results-on-Diamond-track)
+
+## Overview 
+
+![overview](https://github.com/dvij542/apacrace/assets/43860166/8c1f713e-0d0e-40d2-b97b-3cd658a53c7d)
 
 ## Hardware specifications
 
