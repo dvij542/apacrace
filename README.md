@@ -148,9 +148,45 @@ As can be seen from the speed plot, the car crashes at about 120s. The plots for
 The trajectory plots may not be visible clearly due to large track size. The video of the runs help to observe the results more clearly :-
 
 
-## RC Car
+## RC Car experiments
+Finally, we test our algorithm on a real RC car to demonstrate working on a real system with real sensor, model noises and that we can implement in realtime. The car is equipped with a Lidar, a depth dual camera, an IMU and wheel encoders. 
 
+| ![rc_car](https://github.com/dvij542/apacrace/assets/43860166/6639e87d-4154-4622-a585-161b65afd132) |
+|:--:|
+| RC car hardware |
 
+Despite the onboard computation available, we use a windows machine with 16 GB RAM, AMD Ryzen 5000 processor for computation which also runs the Vicon tracker software for localization and communicate the commands directly to the vehicle
 
+![Screenshot from 2023-09-16 02-19-06](https://github.com/dvij542/apacrace/assets/43860166/775259ca-940f-40a1-815b-800c7bfdff04)
 
+### Experiment Setup
+
+We perform the experiment on 2 track as shown below. The lane width is about 0.5 m. The reference line is taken to be the centerline with limiting speeds rendered according to \cite{doi:10.1080/00423114.2019.1631455}. The speeds are adjusted according to the estimated friction coefficient. We conduct the experiment by starting a friction coefficient equal to $1.5$ and incrementally increase target speeds from $50\%$ of the reference speeds to $100\%$ of the reference speeds from $t=10s$ to $t=35s$. This is to ensure physical safety and also allow sufficient time and data for the adaptation algorithm to estimate the friction and aerodynamic parameters. 
+
+### Results on Oval track
+
+| ![rounded_rect_ref](https://github.com/dvij542/apacrace/assets/43860166/96f3e4d1-fb6c-41f0-a86f-c45e9c582204) | ![rounded_diamond_ref](https://github.com/dvij542/apacrace/assets/43860166/b931b094-3c2a-4b5c-9cb8-734be118155e) |
+|:--:|:--:| 
+| Oval track | Diamond track | 
+
+The trajectories followed if adaptation is used vs not used are as follows :-
+
+| Method | Trajectory | $$\mu$$ used for raceline |
+|:--:|:--:|:--:|
+| Without adaptation | ![path](https://github.com/dvij542/apacrace/assets/43860166/5e4a9cab-4fd0-4e9b-9286-5c0657fdfe25) | Same as beginning ($$\mu=1.0$$) |
+| With model + reference speed adaptations (ours) | ![path(1)](https://github.com/dvij542/apacrace/assets/43860166/decd881f-99b6-413b-aaca-6636ba3e21ae) | ![mu_preds(1)](https://github.com/dvij542/apacrace/assets/43860166/585115b2-28d4-4bdc-bdd8-a89fed070b64) |
+
+Then, we change the surface by adding wooden planks on the ground as shown below to change the surface :-
+
+![Screenshot from 2023-09-16 02-43-22](https://github.com/dvij542/apacrace/assets/43860166/d19e47a7-8e8a-4ec8-9eb2-d44e81e8a39d)
+
+Starting with the same predicted model and friction coefficient, we again increase the speeds gradually from 0.5 of raceline speeds to 1. The trajectory followed by the car is as follows :-
+
+| Trajectory | $$\mu$$ used for raceline |
+|:--:|:--:|
+| ![path(2)](https://github.com/dvij542/apacrace/assets/43860166/eea3c937-3908-4106-8e8e-351e9bc01b79) | ![mu_preds(2)](https://github.com/dvij542/apacrace/assets/43860166/51c3f664-b27b-4d7c-8b3f-6b50291f95a6) |
+
+As can be clearly seen, the vehicle does move out of the track at the beginning but is able to use the experience to tune the model and friction coefficient to adjust the next lap accordingly and is able to adapt well to the new surface. The video of the whole run is as below :-
+
+### Results on Diamond track
 
