@@ -1,5 +1,11 @@
 # Adaptive Planning and Control with Time-Varying Tire Models for Autonomous Racing Using Extreme Learning Machine
 
+## Table of contents
+-[Hardware specifications](#hardware-specifications)
+-[Numerical simulation experiments](#Numerical-simulation-experiments)
+-[Carla simulation experiment](#carla-simulation-experiment)
+-[RC Car experiments](#RC-Car-experiments)
+
 ## Hardware specifications
 
 All experiments have been performed on AMD Ryzen 7 5000 series CPU with 16 GB RAM. For the RC car experiments, it is equipped with a Lidar, a depth dual camera, an IMU and wheel encoders. We however use the Vicon based localization to get an accurate position and orientation of the vehicle with high accuracy (of about 1 cm and 0.01 rad).
