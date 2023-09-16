@@ -22,7 +22,7 @@ Rendered racelines at :-
 
 <div class="table-wrapper" markdown="block">
 
-| <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686" width="2000"> | !<img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686" width="2000"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686" width="2000"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686" width="2000"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686" width="2000"> |
+| <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> |
 |:--:|:--:|:--:|:--:|:--:| 
 | $$\mu=0.6$$ | $$\mu=0.7$$ | $$\mu=0.8$$ | $$\mu=0.9$$ | $$\mu=1.0$$ | 
 
