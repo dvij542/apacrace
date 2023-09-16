@@ -42,7 +42,7 @@ Rendered racelines at :-
 
 <div class="table-wrapper" markdown="block">
 
-| <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> | <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> |
+| <img src="https://github.com/dvij542/apacrace/assets/43860166/cfbb4a36-e02c-4370-bdcd-914c74f0a686"> |  ![ethz_raceline1](https://github.com/dvij542/apacrace/assets/43860166/5e394135-a344-4da0-8f0b-ee14654c3821) | ![ethz_raceline2](https://github.com/dvij542/apacrace/assets/43860166/4e3e5501-5af8-42f8-a464-7a65efb2faa1) | ![ethz_raceline3](https://github.com/dvij542/apacrace/assets/43860166/c700b49f-5345-48b1-a001-4d8b537515fc) | ![ethz_raceline4](https://github.com/dvij542/apacrace/assets/43860166/6f975e8f-38a4-43fd-9b72-85990c750e01) |
 |:--:|:--:|:--:|:--:|:--:| 
 | $$\mu=0.6$$ | $$\mu=0.7$$ | $$\mu=0.8$$ | $$\mu=0.9$$ | $$\mu=1.0$$ | 
 
