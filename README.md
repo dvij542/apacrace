@@ -60,7 +60,7 @@ This is to simulate wear and tear of the tires. We reduce the friction coefficie
 
 | ![max_friction_forces](https://github.com/dvij542/apacrace/assets/43860166/683361dd-918f-4b4e-aeda-0cfd74263175) |
 |:--:| 
-| time vs $$D_f/D_r$$ variation |
+| time vs $D_f/D_r$ variation |
 
 The resultant trajectory, speed and $$\mu$$ (used to render raceline reference speeds) plots for different algorithms are as follows :-
 
