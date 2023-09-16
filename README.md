@@ -29,6 +29,9 @@
 
 All experiments have been performed on AMD Ryzen 7 5000 series CPU with 16 GB RAM. For the RC car experiments, it is equipped with a Lidar, a depth dual camera, an IMU and wheel encoders. We however use the Vicon based localization to get an accurate position and orientation of the vehicle with high accuracy (of about 1 cm and 0.01 rad).
 
+## High Quality submission video
+
+
 ## Numerical simulation experiments 
 
 We first present all the results from numeric simulation
@@ -129,6 +132,8 @@ Next, to test how our method would perform if there is a suddent drop in maximum
 |:--:|:--:|:--:|:--:|
 | Without any adaptation | ![track_run1(1)](https://github.com/dvij542/apacrace/assets/43860166/79053d1c-2b6d-4e32-96fb-ae9d5abd9b77) | ![speeds(1)](https://github.com/dvij542/apacrace/assets/43860166/f892b908-8348-4831-b715-2bcc8c4cee96) | Same as beginning ($$\mu=1.0$$) |
 | With model + reference speed adaptations (ours) | ![track_run1](https://github.com/dvij542/apacrace/assets/43860166/d78894c3-ef25-4b88-a73f-f2c191b10739) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/3d7ad598-8ebf-4e2b-83c2-8a7108ed081a) |  ![mus](https://github.com/dvij542/apacrace/assets/43860166/8e076481-5d96-4942-bccb-633591ab1367) |
+
+### Results on ETHZ track with different friction decline rates
 
 ## Carla simulation experiment 
 
