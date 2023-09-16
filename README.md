@@ -2,9 +2,23 @@
 
 ## Table of contents
 - [Hardware specifications](#hardware-specifications)
+- [High Quality submission video](#hardware-specifications) 
 - [Numerical simulation experiments](#Numerical-simulation-experiments)
+  - [Tracks](#tracks)   
+    - [ETHZ](#ethz)   
+    - [ETHZMobil](#ETHZMobil)
+  - [Offline validation](#Offline-validation)
+  - [Results on ETHZ track with constant friction decline](#Results-on-ETHZ-track-with-constant-friction-decline)
+  - [Results on ETHZMobil track with constant friction decline](#Results-on-ETHZMobil-track-with-constant-friction-decline)
+  - [Results on ETHZ track with sudden friction decline](#Results-on-ETHZ-track-with-sudden-friction-decline) 
+  - [Results on ETHZ track with different friction decline rates](#Results-on-ETHZ-track-with-sudden-friction-decline)
 - [Carla simulation experiment](#carla-simulation-experiment)
+  - [Offline validation](#Offline-validation)
+  - [Online run with constant friction decay](#Online-run-with-constant-friction-decay)
 - [RC Car experiments](#RC-Car-experiments)
+  - [Experiment Setup](#Experiment-Setup)
+  - [Results on Oval track](#Results-on-Oval-track)
+  - [Results on Diamond track](#Results-on-Diamond-track)
 
 ## Hardware specifications
 
