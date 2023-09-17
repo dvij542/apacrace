@@ -218,5 +218,7 @@ Starting with the same predicted model and friction coefficient, we again increa
 
 As can be clearly seen, the vehicle does move out of the track at the beginning but is able to use the experience to tune the model and friction coefficient to adjust the next lap accordingly and is able to adapt well to the new surface. The video of the whole run is as below :-
 
+[![Watch the video](https://img.youtube.com/vi/lFokBhqTKo0/maxresdefault.jpg)](https://youtu.be/lFokBhqTKo0)
+
 ### Results on Diamond track
 
