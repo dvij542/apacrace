@@ -6,8 +6,8 @@
 - [High Quality submission video](#hardware-specifications) 
 - [Numerical simulation experiments](#Numerical-simulation-experiments)
   - [Tracks](#tracks)   
-    - [ETHZ](#ethz)   
-    - [ETHZMobil](#ETHZMobil)
+    - ETHZ  
+    - ETHZMobil
   - [Offline validation](#Offline-validation)
   - [Results on ETHZ track with constant friction decline](#Results-on-ETHZ-track-with-constant-friction-decline)
   - [Results on ETHZMobil track with constant friction decline](#Results-on-ETHZMobil-track-with-constant-friction-decline)
