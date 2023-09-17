@@ -177,7 +177,7 @@ As can be seen from the speed plot, the car crashes at about 120s. The plots for
 
 The trajectory plots may not be visible clearly due to large track size. The video of the runs help to observe the results more clearly :-
 
-[![Watch the video](https://img.youtube.com/vi/LJGpZviw_Eg/maxresdefault.jpg)](https://youtu.be/lFokBhqTKo0)
+[![Watch the video](https://img.youtube.com/vi/LJGpZviw_Eg/maxresdefault.jpg)](https://youtu.be/LJGpZviw_Eg)
 
 ## RC Car experiments
 Finally, we test our algorithm on a real RC car to demonstrate working on a real system with real sensor, model noises and that we can implement in realtime. The car is equipped with a Lidar, a depth dual camera, an IMU and wheel encoders. 
