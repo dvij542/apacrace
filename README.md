@@ -103,7 +103,8 @@ The resultant trajectory, speed and $$\mu$$ (used to render raceline reference s
 | Oracle | ![track_run1(4)](https://github.com/dvij542/apacrace/assets/43860166/b05c9edc-7c32-4138-a641-c614d925a079) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/3550dfa0-ec21-4dc6-bb68-7ad560b71019) | Same as GT |
 
 Here is the video comparison with 3 runs (without adaptation, with only model adaptation, with model + reference speed adaptation) in parallel :-
-[![Watch the video](https://img.youtube.com/vi/eNJlvr7D7q0/maxresdefault.jpg)](https://youtu.be/eNJlvr7D7q0)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eNJlvr7D7q0" frameborder="0" allowfullscreen></iframe>
 
 ### Results on ETHZMobil track with constant friction decline 
 
@@ -179,7 +180,7 @@ As can be seen from the speed plot, the car crashes at about 120s. The plots for
 
 The trajectory plots may not be visible clearly due to large track size. The video of the runs help to observe the results more clearly :-
 
-[![Watch the video](https://img.youtube.com/vi/LJGpZviw_Eg/maxresdefault.jpg)](https://youtu.be/LJGpZviw_Eg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LJGpZviw_Eg" frameborder="0" allowfullscreen></iframe>
 
 ## RC Car experiments
 Finally, we test our algorithm on a real RC car to demonstrate working on a real system with real sensor, model noises and that we can implement in realtime. The car is equipped with a Lidar, a depth dual camera, an IMU and wheel encoders. 
@@ -221,7 +222,7 @@ Starting with the same predicted model and friction coefficient, we again increa
 
 As can be clearly seen, the vehicle does move out of the track at the beginning but is able to use the experience to tune the model and friction coefficient to adjust the next lap accordingly and is able to adapt well to the new surface. The video of the whole run is as below :-
 
-[![Watch the video](https://img.youtube.com/vi/lFokBhqTKo0/maxresdefault.jpg)](https://youtu.be/lFokBhqTKo0)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lFokBhqTKo0" frameborder="0" allowfullscreen></iframe>
 
 ### Results on Diamond track
 
