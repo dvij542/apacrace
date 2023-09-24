@@ -121,6 +121,7 @@ The resultant trajectory, speed and $$\mu$$ (used to render raceline reference s
 | Without any adaptation | ![traj_withoutmobil](https://github.com/dvij542/apacrace/assets/43860166/7a71e6f2-914c-4478-93df-513d1907d9cb) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/a3cc0ccb-5137-4e01-b38d-220011f605e5) | Same as beginning ($$\mu=1.0$$) |
 | With only model adaptation | ![traj_withconstmobil](https://github.com/dvij542/apacrace/assets/43860166/129abd2d-b720-4691-b03f-13203913490b) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/f92ae393-c9bf-4038-ae92-6d16fe24b5ba) | Same as beginning ($$\mu=1.0$$) |
 | With model + reference speed adaptations (ours) | ![traj_withmobil](https://github.com/dvij542/apacrace/assets/43860166/7c90a09a-9473-4efd-8e7a-965f11fea833) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/d8d6f7dd-2d25-4be1-bd98-dc0891a9a053) |  ![mus](https://github.com/dvij542/apacrace/assets/43860166/8e076481-5d96-4942-bccb-633591ab1367) |
+| With GP for model difference | ![traj_gpmobil](https://github.com/dvij542/apacrace/assets/43860166/1457125e-eabc-46fa-b978-ff0e8bedc13c) | ![speeds_gp_mobil](https://github.com/dvij542/apacrace/assets/43860166/c691c5b2-9be1-42b3-a56d-89dbf4e46422) | Same as GT |
 | Oracle | ![traj_oraclemobil](https://github.com/dvij542/apacrace/assets/43860166/3384369e-55d1-4e38-a0ff-c824b5036675) |  ![speeds_oracle](https://github.com/dvij542/apacrace/assets/43860166/97e7b0a6-6fa8-49cb-aa04-c88b1bae241a) | Same as GT |
 
 ### Results on ETHZ track with sudden friction decline
