@@ -198,17 +198,17 @@ Despite the onboard computation available, we use a windows machine with 16 GB R
 
 We perform the experiment on 2 track as shown below. The lane width is about 0.5 m. The reference line is taken to be the centerline with limiting speeds rendered according to \cite{doi:10.1080/00423114.2019.1631455}. The speeds are adjusted according to the estimated friction coefficient. We conduct the experiment by starting a friction coefficient equal to $1.5$ and incrementally increase target speeds from $50\%$ of the reference speeds to $100\%$ of the reference speeds from $t=10s$ to $t=35s$. This is to ensure physical safety and also allow sufficient time and data for the adaptation algorithm to estimate the friction and aerodynamic parameters. 
 
-### Results on Oval track
-
 | ![rounded_rect_ref](https://github.com/dvij542/apacrace/assets/43860166/96f3e4d1-fb6c-41f0-a86f-c45e9c582204) | ![rounded_diamond_ref](https://github.com/dvij542/apacrace/assets/43860166/b931b094-3c2a-4b5c-9cb8-734be118155e) |
 |:--:|:--:| 
 | Oval track | Diamond track | 
+
+### Results on Oval track
 
 The trajectories followed if adaptation is used vs not used are as follows :-
 
 | Method | Trajectory | $$\mu$$ used for raceline |
 |:--:|:--:|:--:|
-| Without adaptation | ![path](https://github.com/dvij542/apacrace/assets/43860166/5e4a9cab-4fd0-4e9b-9286-5c0657fdfe25) | Same as beginning ($$\mu=1.0$$) |
+| Without adaptation | ![path](https://github.com/dvij542/apacrace/assets/43860166/5e4a9cab-4fd0-4e9b-9286-5c0657fdfe25) | Same as beginning ($$\mu=1.5$$) |
 | With model + reference speed adaptations (ours) | ![path(1)](https://github.com/dvij542/apacrace/assets/43860166/decd881f-99b6-413b-aaca-6636ba3e21ae) | ![mu_preds(1)](https://github.com/dvij542/apacrace/assets/43860166/585115b2-28d4-4bdc-bdd8-a89fed070b64) |
 
 Then, we change the surface by adding wooden planks on the ground as shown below to change the surface :-
@@ -227,3 +227,9 @@ As can be clearly seen, the vehicle does move out of the track at the beginning 
 
 ### Results on Diamond track
 
+The trajectories followed if adaptation is used vs not used are as follows :-
+
+| Method | Trajectory | $$\mu$$ used for raceline |
+|:--:|:--:|:--:|
+| Without adaptation |![path](https://github.com/dvij542/apacrace/assets/43860166/cc613df0-9cf7-46a5-8f18-aef5d82d9f8e) | Same as beginning ($$\mu=1.5$$) |
+| With model + reference speed adaptations (ours) | ![path](https://github.com/dvij542/apacrace/assets/43860166/b305ac60-f953-41a3-8b3a-dc207a4fa44d) | ![mu_preds(1)](https://github.com/dvij542/apacrace/assets/43860166/585115b2-28d4-4bdc-bdd8-a89fed070b64) |
