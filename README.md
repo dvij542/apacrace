@@ -232,4 +232,4 @@ The trajectories followed if adaptation is used vs not used are as follows :-
 | Method | Trajectory | $$\mu$$ used for raceline |
 |:--:|:--:|:--:|
 | Without adaptation |![path](https://github.com/dvij542/apacrace/assets/43860166/cc613df0-9cf7-46a5-8f18-aef5d82d9f8e) | Same as beginning ($$\mu=1.5$$) |
-| With model + reference speed adaptations (ours) | ![path](https://github.com/dvij542/apacrace/assets/43860166/b305ac60-f953-41a3-8b3a-dc207a4fa44d) | ![mu_preds(1)](https://github.com/dvij542/apacrace/assets/43860166/585115b2-28d4-4bdc-bdd8-a89fed070b64) |
+| With model + reference speed adaptations (ours) | ![path](https://github.com/dvij542/apacrace/assets/43860166/b305ac60-f953-41a3-8b3a-dc207a4fa44d) |![1399](https://github.com/dvij542/apacrace/assets/43860166/d153b05a-3410-467e-b83d-3bb46b64bb4f) |
