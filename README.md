@@ -1,8 +1,8 @@
 # Adaptive Planning and Control with Time-Varying Tire Models for Autonomous Racing Using Extreme Learning Machine
 
-[![image](https://github.com/dvij542/apacrace/assets/43860166/57a875cf-84f3-45e5-a1ab-5fe00cb77f2b)](https://github.com/dvij542/apacrace-code) 
+[![image](https://github.com/dvij542/apacrace/assets/43860166/57a875cf-84f3-45e5-a1ab-5fe00cb77f2b | width=10)](https://github.com/dvij542/apacrace-code ) 
 
-[![image](https://github.com/dvij542/apacrace/assets/43860166/d692488e-a9d9-4d46-9b1a-007f1b5bb07c)](https://arxiv.org/abs/2303.08235)
+[![image](https://github.com/dvij542/apacrace/assets/43860166/d692488e-a9d9-4d46-9b1a-007f1b5bb07c | width=10)](https://arxiv.org/abs/2303.08235)
 
 ## Table of contents
 - [Overview](#overview)
