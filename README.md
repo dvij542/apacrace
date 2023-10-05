@@ -139,7 +139,7 @@ Next, to test how our method would perform if there is a suddent drop in maximum
 | Method | Trajectory | Speeds | $$\mu$$ used for raceline |
 |:--:|:--:|:--:|:--:|
 | Without any adaptation | ![track_run1(1)](https://github.com/dvij542/apacrace/assets/43860166/79053d1c-2b6d-4e32-96fb-ae9d5abd9b77) | ![speeds(1)](https://github.com/dvij542/apacrace/assets/43860166/f892b908-8348-4831-b715-2bcc8c4cee96) | Same as beginning ($$\mu=1.0$$) |
-| With model + reference speed adaptations (ours) | ![track_run1](https://github.com/dvij542/apacrace/assets/43860166/d78894c3-ef25-4b88-a73f-f2c191b10739) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/3d7ad598-8ebf-4e2b-83c2-8a7108ed081a) |  ![mus](https://github.com/dvij542/apacrace/assets/43860166/8e076481-5d96-4942-bccb-633591ab1367) |
+| With model + reference speed adaptations (ours) | ![track_run1](https://github.com/dvij542/apacrace/assets/43860166/d78894c3-ef25-4b88-a73f-f2c191b10739) | ![speeds](https://github.com/dvij542/apacrace/assets/43860166/3d7ad598-8ebf-4e2b-83c2-8a7108ed081a) |  ![mus](https://github.com/dvij542/apacrace/assets/43860166/6cb82152-2aee-497b-9c6f-6ebda94c3a51) |
 
 ### Results on ETHZ track with different friction decline rates
 
