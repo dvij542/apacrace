@@ -143,6 +143,12 @@ Next, to test how our method would perform if there is a suddent drop in maximum
 
 ### Results on ETHZ track with different friction decline rates
 
+| Method | Trajectory | Speeds | $$\mu$$ used for raceline |
+|:--:|:--:|:--:|:--:|
+| Ours (on higher friction decline rate) |  ![traj_gp_fastdecay](https://github.com/dvij542/apacrace/assets/43860166/ecb42f1f-00c6-4522-8682-370c12ddbf46) |  ![frame1779](https://github.com/dvij542/apacrace/assets/43860166/e8035746-8597-4c7b-ae9e-86a3682279f9) |  ![frame1779](https://github.com/dvij542/apacrace/assets/43860166/522b7874-c4b2-493c-8db2-efd60b47ba5a) |
+| Ours (on moderate friction decline rate) | ![traj_gp_mediumdecay](https://github.com/dvij542/apacrace/assets/43860166/98a89a15-f9eb-44e0-a70a-ad9c90fb638e) |  ![frame1779](https://github.com/dvij542/apacrace/assets/43860166/ed006fb1-2590-40c9-af47-42b0f068b79d) | ![frame1779](https://github.com/dvij542/apacrace/assets/43860166/5ef4fb02-55f6-415a-992d-bf62b255cfa5) |
+| Ours (on less friction decline rate) | ![traj_gp_slowdecay](https://github.com/dvij542/apacrace/assets/43860166/eb50168b-4876-4075-aaa5-f07a3a40f595) | ![frame1779](https://github.com/dvij542/apacrace/assets/43860166/d8e93938-916c-400e-87ef-12512e60d3f2) |  ![frame1779](https://github.com/dvij542/apacrace/assets/43860166/48c66a76-32f3-4db7-97bf-4e58d5f8340a) |
+
 ## Carla simulation experiment 
 
 To demonstrate our algorithm working on a high fidelity simulator in realtime with full sized car, we deploy it on Carla simulator. Deploying on a simulator gives us additional confidence in terms of the performance guarantee in presence of sensor and model noise. We use the following trackmap (Town07) :- 
