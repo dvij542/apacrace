@@ -14,7 +14,7 @@
   - [Results on ETHZ track with constant friction decline](#results-on-ethz-track-with-constant-friction-decline)
   - [Results on ETHZMobil track with constant friction decline](#results-on-ethzmobil-track-with-constant-friction-decline)
   - [Results on ETHZ track with sudden friction decline](#results-on-ethz-track-with-sudden-friction-decline) 
-  - [Results on ETHZ track with different friction decline rates](#results-on-ethz-track-with-sudden-friction-decline)
+  - [Results on ETHZ track with different friction decline rates](#results-on-ethz-track-with-different-friction-decline-rates)
 - [Carla simulation experiment](#carla-simulation-experiment)
   - [Offline validation](#offline-validation)
   - [Online run with constant friction decay](#online-run-with-constant-friction-decay)
